@@ -1,3 +1,6 @@
-export default function handler(req, res) {
-  res.status(200).json({ mensaje: "¡Hola desde Vercel Serverless!" });
-}
+module.exports = (req, res) => {
+  res.send({
+    status: 200,
+    message: "Hello world!!",
+  });
+};
